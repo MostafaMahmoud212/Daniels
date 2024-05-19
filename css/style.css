@@ -1,0 +1,387 @@
+:root {
+  --bg-color: #f7f7f7;
+}
+html {
+  scroll-padding-top: 85px;
+}
+
+/* start Home */
+header.vh-100 {
+  background-image:  linear-gradient(#000000a8, #000000a8) , url("../imgs/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0px 0px;
+}
+header .nav-link.active{
+  position: relative;
+}
+header .nav-item .nav-link span {
+  width: 0px; 
+  transition: .5s;
+}
+header .nav-link.active span {
+  width: 85%;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+.navbar-collapse.collapse.show {
+  background-color: #fff;
+  color: #333;
+}
+.hello-maseg {
+  width: 90%;
+}
+.head-h {
+  font-size: 40px;
+  font-weight: bold;
+}
+.animat::after {
+  content: "|";
+  animation: type 6s infinite;
+  font-weight: bold;
+}
+
+@keyframes type{
+  0% {content: "|"; }
+  2% {content: "D|";}
+  4% {content: "De|";}
+  6% {content: "Des|";}
+  8% {content: "Desi|";}
+  10% {content: "Desig|";}
+  12% {content: "Design|";}
+  14% {content: "Designe|";}
+  16% {content: "Designer|";}
+  18% {content: "Designe|";}
+  20% {content: "Design|";}
+  22% {content: "Desig|";}
+  24% {content: "Desi|";}
+  26% {content: "Des|";}
+  28% {content: "De|";}
+  30% {content: "D|";}
+  32% {content: "|";}
+  34% {content: "D|";}
+  36% {content: "De|";}
+  38% {content: "Dev|";}
+  40% {content: "Deve|";}
+  42% {content: "Devel|";}
+  44% {content: "Develo|";}
+  46% {content: "Develop|";}
+  48% {content: "Develope|";}
+  50% {content: "Developer|";}
+  52% {content: "Develope|";}
+  54% {content: "Develop|";}
+  56% {content: "Develo|";}
+  58% {content: "Devel|";}
+  60% {content: "Deve|";}
+  62% {content: "Dev|";}
+  64% {content: "De|";}
+  66% {content: "D|";}
+  68% {content: "|";}
+  70% {content: "L|";}
+  72% {content: "Lar|";}
+  74% {content: "Larr|";}
+  76% {content: "Larry |";}
+  78% {content: "Larry D|";}
+  80% {content: "Larry Da";}
+  82% {content: "Larry Dani";}
+  84% {content: "Larry Daniel|";}
+  86% {content: "Larry Daniels|";}
+  88% {content: "Larry Danie|";}
+  90% {content: "Larry Dan|";}
+  92% {content: "Larry D|";}
+  94% {content: "Larry |";}
+  96% {content: "Larr|";}
+  98% {content: "La|";}
+  100% {content: "|";}
+}
+.home-i {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: #00000043;
+}
+
+/* End Home */
+
+
+/* Start About Me  */
+
+.about-contaner {
+  border-radius: 2px;
+}
+#about figure {
+  position: relative;
+  z-index: 5;
+}
+#about figure::after {
+  content: ""; 
+  width: 80%; 
+  height: 80%; 
+  background-image: url(../imgs/dots.png); 
+  background-repeat: repeat; 
+  position: absolute; 
+  bottom: -20px; 
+  left: -3%; 
+  margin: auto;
+  z-index: -1;
+}
+.title-cap {
+  color: #00000094;
+}
+.lead {
+  color: #000000;
+}
+.lead b {
+  color: #00000094;
+}
+.skills .iteme   {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset
+}
+button.btn-1,
+button.btn-2:hover {
+  background-color: #000000;
+  transition: .5s;
+}
+button.btn-1:hover,
+button.btn-2 {
+  background-color: #fff;
+  transition: .5s;
+  color: #000000;
+}
+
+/* end About Me  */
+
+/* start Services  */
+.section-b {
+  background-color: #f7f7f7;
+}
+.section-title h3 {
+  font-size: 50px;
+}
+.section-title h3 {
+  position: relative;
+  z-index: 5;
+}
+.section-title h3::after {
+  content: ""; 
+  width: 100%; 
+  height: 30px; 
+  background-image: url(../imgs/dots.png); 
+  position: absolute; 
+  bottom: -10px; 
+  left: 0%; 
+  z-index: -1;
+}
+.collum-cap {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+.icon-containere {
+  height: 100px;
+  width: 100px;
+  transition: .7s;
+  background-color: #33333315;
+}
+.services-card:hover .icon-containere {
+  background-color: black;
+  border: 7px solid white;
+}
+.services-card .icon-containere i {
+  color: #333;
+  transition: .7s;
+}
+.services-card:hover .icon-containere i {
+  color: white;
+}
+
+/* end Services  */
+
+/* Start portfolio*/
+
+#portfolio .nav-tabs .nav-link {
+  border: 0px;
+  color: #000;
+  
+}
+.nav-tabs .nav-link.active {
+  content: "";
+  position: relative;
+}
+.nav-tabs .nav-link::after {
+  content: "";
+  width: 0px; 
+  transition: .9s;
+}
+.nav-tabs .nav-link.active::after {
+  content: "";
+  width: 75%;
+  height: 4px;
+  background-color: #333;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+#portfolio .tab-content .tab-pane {
+  transition: .3s;
+}
+figcaption.layere {
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  background-color: #ff0808;
+  transition: .8s;
+  position: relative;
+}
+.my-figure:hover figcaption {
+  opacity: .9;
+  background-color: #fff;
+}
+figcaption.layere .i-cosh-cont {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  background-color: #000;
+  color: #fff;
+  transition: .7s;
+}
+figcaption .i-cosh-cont:hover {
+  color: #000;
+  border: 4px solid black;
+  background-color: #fff;
+}
+.modal .btn-close {
+  margin-left: 95%;
+}
+
+/* end portfolio*/
+
+/* start Testimonials  */
+
+#testimonials {
+  padding: 100px 0px 200px 0px;
+}
+#testimonials .h-test {
+  font-size: 40px;
+}
+.carousel-indicators{
+  top: 90%;
+}
+.carousel-indicators .circ {
+  width: 10px;
+  height: 10px;
+}
+.carousel-content .my-img {
+  width: 13%;
+}
+.carousel-indicators.active [data-bs-target],
+.carousel-indicators [data-bs-target] {
+  background-color: #869791;
+}
+/* end Testimonials  */
+
+/* start numbers  */
+#numbers {
+  padding: 100px 0px 100px 0px;
+}
+/* end numbers  */
+
+/* start our Team.  */
+figcaption.layere2 {
+  top: 30%;
+  left: 30%;
+  bottom: 30%;
+  right: 30%;
+  opacity: 0;
+  background-color: #ffffffa1;
+  transition: 1s;
+}
+.cl-hov:hover figcaption.layere2 {
+  opacity: .9;
+  transform: rotateY(360deg);
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background-color: #fff;
+}
+figcaption.layere2 .i-cosh .i-hove {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  background-color: #000;
+  color: #fff;
+  transition: .7s;
+}
+figcaption.layere2 .i-cosh .i-hove:hover {
+  background-color: #fff;
+  border: 4px solid #000;
+  color: #000;
+}
+.cl-hov .hov-s a img {
+  transition: 1s;
+}
+.cl-hov:hover a img {
+  transform: scale(1.2);
+}
+.card-body {
+  background-color: #282828;
+  color: #fff;
+}
+/* end our Team.  */
+
+/* start contact us  */
+
+.icon-container {
+  height: 60px;
+  width: 60px;
+  transition: .7s;
+  background-color: #33333315;
+}
+#contact .i-c:hover .icon-container {
+  background-color: black;
+  border: 7px solid white;
+}
+#contact .i-c .icon-container i {
+  color: #333;
+  transition: .7s;
+}
+#contact .i-c:hover .icon-container i {
+  color: white;
+}
+form textarea.form-controle {
+  resize:both;
+}
+form input.form-controle,
+form textarea.form-controle{
+  background-color: #84828215;
+  max-height: 200px;
+  transition: .2s;
+}
+form input.form-controle:focus,
+form textarea.form-controle:focus {
+  outline: none;
+}
+form .button button.bg-black {
+  transition: .5s;
+}
+form .button button.bg-black:hover {
+  background-color: #fff !important;
+  color: #000000 !important;
+}
+/* end contact us // */
+
+footer {
+  background-color: #1c1c1c;
+}
+footer p {
+  padding: 15px 0px 10px;
+  word-spacing: 3;
+  color: #b5b9b7;
+  font-size: 20px;
+}
